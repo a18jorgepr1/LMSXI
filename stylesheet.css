@@ -1,27 +1,46 @@
-#body {
-    background-color: skyblue
+/* BORRAR: Sólo para ver el grid */
+div {
+    border: 2px solid grey;
 }
+
 #content {
     display: grid;
     grid-template-columns: repeat(12, 8.33%);
-}   
+    grid-template-rows: auto;
+    }
+#logo {
+    grid-column: 1/1;
+    text-align: center;
+}
+#header {
+    grid-column: 2/12;
+    text-align: center;
+    background-image: linear-gradient(orange, white);
+}
+#empty {
+    grid-column: 12/13;
+}
 #menu {
     grid-column: 1/13;
 }
 #menu li {
     display: inline;
 }
-#content {
-    grid-column: 1/13;
+#beside {
+    grid-column: 1/2;
+}
+#intro {
+    grid-column: 2/12;
 }
 
 #aside {
-    grid-column: 1/13;
+    grid-column: 12/13;
 }
 
 #footer {
     grid-column: 1/13;
-    text-align: right;
+    text-align: center;
+    background: orange;
 }
     
     
