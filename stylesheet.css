@@ -1,4 +1,8 @@
 /* BORRAR: Sólo para ver el grid */
+div {
+    border: 2px solid grey;
+}
+
 body {
     height: 100%;
 }
@@ -20,9 +24,7 @@ body {
 }
 
 
-div {
-    border: 2px solid grey;
-}
+
 p,
 h1,
 h2,
@@ -55,6 +57,7 @@ hgroup {
    
     #menu {
         grid-column: 1/13;
+        
     }
  
   
@@ -170,8 +173,10 @@ hgroup {
     #menu {
         grid-column: 1/13;
     }
+    
     #menu li {
-        display: inline;
+        display: inline-flex;
+        width: 200px;
     }
     #beside {
         grid-column: 1/3;
