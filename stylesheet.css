@@ -8,17 +8,17 @@ body {
 }
 
 @font-face {
-    font-family: 'Rubik-Light';
+    font-family: 'rubik';
     src: url('fonts/rubik/Rubik-Black.ttf') format('ttf'),
         url('fonts/rubik/Rubik-BlackItalic.ttf') format('ttf'),
-        url('fonts/rubik/Rubik-Bold.ttf') format('ttf2'),
+        url('fonts/rubik/Rubik-Bold.ttf') format('ttf'),
         url('fonts/rubik/Rubik-BoldItalic.ttf') format('ttf'),
         url('fonts/rubik/Rubik-Italic.ttf) format('ttf2'),
         url('fonts/rubik/Rubik-Light.ttf') format('ttf'),
         url('fonts/rubik/Rubik-LightItalic.ttf') format('ttf'),
-        url('fonts/rubik/Rubik-Medium.ttf') format('ttf2'),
+        url('fonts/rubik/Rubik-Medium.ttf') format('ttf'),
         url('fonts/rubik/Rubik-MediumItalic.ttf') format('ttf'),
-        url('fonts/rubik/Rubik-Regular.ttf') format('ttf2');
+        url('fonts/rubik/Rubik-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -31,7 +31,7 @@ h2,
 h3,
 li,
 hgroup {
-    font-family: "Rubik-Light";
+    font: "Rubik-Light";
     font-size: 1.3em
 }
    
