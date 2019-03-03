@@ -1,13 +1,15 @@
 /* BORRAR: Sólo para ver el grid */
-div {
+iv {
     border: 2px solid grey;
 }
+
 @font-face {
     font-family: 'rounded_elegance';
     font-style: normal;
     /* Modern Browsers */
     src: url('fonts/rounded_elegance/rounded elegance.ttf') format('truetype');
 }
+
 /* rubik-regular - latin */
 @font-face {
     font-family: 'Rubik';
@@ -80,7 +82,7 @@ li,
 hgroup {
     font-family: "Rubik";
     font-style: normal;
-    font-size: 1.3em
+    font-size: 1em;
 }
 
 body {
@@ -95,7 +97,7 @@ body {
     color: black;
     background: white;
     border: 1px solid #999999;
-    font-size: 80px;
+    font-size: 70px;
     line-height: 60px;
     padding: 2px;
     font-family: 'rounded_elegance';
@@ -103,25 +105,33 @@ body {
 }
 
 /*Primero en el móvil (mobile first)*/
-#logo {
-    grid-column: 1/13;
-    text-align: center;
-    background-color: #F26D30;
-    max-height: 90px;
 
+#logo {
+    grid-column: 1/3;
+    background-color: #F26D30;
+    display: none;
 }
 
 .logo {
-    max-height: 130px;
-    margin: auto;
-
+    max-width: 100%;
+    text-align: center;
+    height: auto;
 
 }
 
 #header {
     grid-column: 1/13;
     text-align: center;
-    background-image: linear-gradient(#F26D30, white);
+    background: #F26D30;
+}
+
+#tittle {
+    font-family: 'rounded_elegance';
+    font-size: 1.2em;
+}
+
+#empty {
+    display: none;
 }
 
 #menu {
@@ -129,13 +139,29 @@ body {
 
 }
 
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav li {
+    flex-grow: 1;
+    text-align: center;
+}
+
+#left-gutter {
+    display: none;
+}
 
 #intro {
-    grid-column: 1/10;
+    grid-column: 1/13;
     height: 100%;
 }
 
-
+#right-gutter {
+    display: none;
+}
 
 #footer {
     grid-column: 1/13;
@@ -143,13 +169,25 @@ body {
     background: #F26D30;
 }
 
+p,
+li {
+    font-size: 0.8em;
+}
+
+.capitalLetter {
+    font-size: 40px;
+    line-height: 40px;
+    padding: 1px;
+    
+}
 
 @media only screen and (min-width: 480px) {
 
     #logo {
+        display: inline;
         grid-column: 1/3;
         text-align: center;
-        background-color: #F26D30
+        background-color: #F26D30;
     }
 
     .logo {
@@ -158,28 +196,49 @@ body {
     }
 
     #header {
-        grid-column: 3/13;
-        text-align: center;
-        background-image: linear-gradient(#F26D30, white);
+        grid-column: 3/11;
+        background: #F26D30;
     }
+
     #tittle {
         font-family: 'rounded_elegance';
-        font-size: 1.73em
+        font-size: 1.73em;
     }
 
-    #menu {
-        grid-column: 1/13;
+    #empty {
+        display: inline;
+        grid-column: 11/13;
+        background: #F26D30;
+    }
 
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    #left-gutter {
+        display: inline;
+        grid-column: 1/3;
+        padding: 0 1em;
+        text-align: justify;
     }
 
 
     #intro {
-        grid-column: 3/10;
+        grid-column: 3/13;
         height: 100%;
+        padding: 0 1em;
     }
 
     #right-gutter {
-        grid-column: 10/12;
+        display: none;
+        grid-column: 11/13;
+        padding: 0 1em;
     }
 
     #footer {
@@ -187,14 +246,20 @@ body {
         text-align: center;
         background: #F26D30;
     }
+
+    p,
+    li {
+        font-size: 0.8em;
+    }
 }
 
 @media only screen and (min-width: 768px) {
     #logo {
+        display: inline;
         grid-column: 1/3;
         text-align: center;
         background-color: #F26D30;
-        min-height: 7em;
+        min-height: 7.4em;
     }
 
     .logo {
@@ -203,30 +268,35 @@ body {
     }
 
     #header {
-        grid-column: 3/13;
+        grid-column: 3/11;
         background: #F26D30;
-        
+
     }
+
     #tittle {
         font-family: 'rounded_elegance';
-        font-size: 2.16em
+        font-size: 2.32em;
     }
 
-    
-
+    #empty {
+        display: inline;
+        grid-column: 11/13;
+        background: #F26D30;
+    }
 
     nav ul {
         display: flex;
         flex-wrap: wrap;
+
     }
 
     nav li {
-        /*la caja puede crecer para ocupar todo el espacio disponible */
         flex-grow: 1;
         text-align: center;
     }
 
     #left-gutter {
+        display: inline;
         grid-column: 1/3;
         padding: 0 1em;
         text-align: justify;
@@ -235,15 +305,31 @@ body {
     #intro {
         grid-column: 3/13;
         height: 100%;
+        padding: 0 1em;
     }
 
-    
+    #right-gutter {
+        display: none;
+        grid-column: 11/13;
+        padding: 0 1em;
+    }
 
     #footer {
         grid-column: 1/13;
         text-align: center;
         background: #F26D30;
     }
+
+    p,
+    li {
+        font-size: 1em;
+    }
+    .capitalLetter {
+    font-size: 70px;
+    line-height: 60px;
+    padding: 2px;
+    
+}
 }
 
 /*Vista escritorio tablet: */
@@ -265,8 +351,9 @@ body {
     #header {
         grid-column: 3/11;
         background: #F26D30;
-        
+
     }
+
     #tittle {
         font-family: 'rounded_elegance';
         font-size: 2.78em;
@@ -283,12 +370,12 @@ body {
     }
 
     nav li {
-        /*la caja puede crecer para ocupar todo el espacio disponible */
         flex-grow: 1;
         text-align: center;
     }
 
     #left-gutter {
+        display: inline;
         grid-column: 1/3;
         padding: 0 1em;
         text-align: justify;
@@ -297,10 +384,13 @@ body {
     #intro {
         grid-column: 3/11;
         height: 100%;
+        padding: 0 1em;
     }
 
     #right-gutter {
+        display: inline;
         grid-column: 11/13;
+        padding: 0 1em;
     }
 
     #footer {
@@ -308,12 +398,18 @@ body {
         text-align: center;
         background: #F26D30;
     }
+
+    p,
+    li {
+        font-size: 1em;
+    }
 }
 
 /*Vista escritorio HD: */
 
 @media only screen and (min-width: 1200px) {
     #logo {
+        display: inline;
         grid-column: 1/3;
         text-align: center;
         background: #F26D30;
@@ -329,14 +425,16 @@ body {
     #header {
         grid-column: 3/11;
         background: #F26D30;
-        
+
     }
+
     #tittle {
         font-family: 'rounded_elegance';
-        font-size: 3.1em
+        font-size: 3.1em;
     }
 
     #empty {
+        display: inline;
         grid-column: 11/13;
         background: #F26D30;
     }
@@ -351,7 +449,6 @@ body {
     }
 
     nav li {
-        /*la caja puede crecer para ocupar todo el espacio disponible */
         flex-grow: 1;
         text-align: center;
     }
@@ -364,15 +461,22 @@ body {
     #intro {
         grid-column: 3/10;
         height: 100%;
+        padding: 0 1em;
     }
 
     #right-gutter {
         grid-column: 11/13;
+        padding: 0 1em;
     }
 
     #footer {
         grid-column: 1/13;
         text-align: center;
         background: #F26D30;
+    }
+
+    p,
+    li {
+        font-size: 1em;
     }
 }
