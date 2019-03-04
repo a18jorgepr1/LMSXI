@@ -38,27 +38,51 @@
     </section>
     <section id="intro">
         <h2>Formulario de contacto: </h2>
-        <p>Este es un sitio dedicado al vuelo en primera persona de drones cuatrimotores, donde encontrarás todo lo necesario para iniciarte en interesante mundo del fpv.</p>
-
-        <p><span class="capitalLetter">fpv</span> es el acrónimo de First Person View o vista en primera persona en castellano. Cuando decimos que volamos con FPV, significa que una cámara transmite video en tiempo real desde el drone hasta el piloto que está en tierra. Esto permite al operador ver como si estuviese directamente en la 'cabina' del drone.
-            Este tipo de vuelo al no necesitar seguir con la vista la posición en el aire del quadcopter ofrece muchas ventajas:</p>
-        <ul>
-            <li>Enorme sensación de inmersión y velocidad.</li>
-            <li>Gran capacidad de precisión y control.</li>
-            <li>Fácil orientación.</li>
-            <li>Posibilidad de ver en pantalla parámetros de vuelo (OSD).</li>
-            <li>Permite recorrer grandes distancias (Long Range).</li>
-        </ul>
-        <p>Nesciunt eveniet repudiandae exercitationem. Asperiores eos culpa, error laboriosam maxime repellat a beatae quas neque ab ducimus, nobis minus, dolorem vero aliquid omnis doloribus voluptatum et. Earum, nemo. At, neque.</p>
-        <p>Officiis, quasi neque molestias. Cum tempore, sequi aspernatur laborum officia id obcaecati culpa ipsam temporibus distinctio autem consectetur beatae reiciendis perspiciatis magni nam ex quia voluptatum vitae est, deleniti ab.</p>
-        <p>Atque veritatis non mollitia obcaecati, accusamus optio, amet repellat at, possimus corrupti corporis repellendus. Repellendus impedit corporis, architecto aperiam porro facere, accusamus dignissimos veritatis ipsa quae, fugiat possimus. Quod, unde.</p>
+        <form action="http://www.fpvdrone.tk/form" method="post" >
+        <fieldset>
+            <h1><legend>Base de datos de miniquads: </legend></h1>
+          <h2><fieldset>
+              <legend>Datos de tu quad: </legend>
+               <p>Modelo de chasis: <input type="text" name="nombre" placeholder="Introduce aquí el modelo" required/>
+               <p>Motores: <input type="text" size="22px" name="apellido1" placeholder="Introduce aquí la medida" maxlength="30"     required/></p>
+               <p>Variadores: <input type="text" size="22px" name="apellido2" placeholder="Introduzca aquí la potencia."   maxlength="30" /></p>
+               <p>Cámara:<br><input type="radio" name="camera" checked>SD <input type="radio" name="camera" >HD</p>
+              </fieldset></h2><br>
+            <h2><fieldset>
+                <legend>Datos de contacto: </legend>
+                <p>Nombre: <input type="text" name="nombre" placeholder="Introduzca aquí su nombre" required/>
+               <p>Email: <input type="email" size="30" maxlenght="80" name="email" placeholder="Introduzca aquí su email" /></p>
+               <p>Dirección: <input type="text" size="25px" name="direccion" placeholder="Introduzca aquí su dirección" maxlength="80" required/></p>
+               <p>Código postal: <input type="text" size="5" name="cp" placeholder="12345"   maxlength="5" /></p>
+                <p>Ciudad: <input type="text" size="25" maxlenght="30" name="ciudad" placeholder="Introduzca aquí su ciudad" required/></p>
+                <p>País:
+                    <select>
+                        <option disabled selected>Seleccionar</option>
+                        <option name="espana">España</option>
+                        <option name="extranjero">Extranjero</option>
+                    </select> </p>
+                <p>Número de teléfono: <input type="tel" size="9" name="telefono" placeholder="987654321"   maxlength="5" /></p>
+                </fieldset></h2>
+            <p>Si estás de acuerdo con la política de privacidad de <a href="http://www.fpvdrone.tk/condiciones.html">"fpvdrones.tk"</a> y deseas darte de alta haz clic en el botón "Enviar":</p>
+            <p><input type="submit" value="Enviar" name="alta">  <input type="reset" name="limpiar_datos"/> </p>
+        </fieldset>
+      </form>
     </section>
     <aside id="right-gutter">
         <h2>Ultimos artículos.</h2>
         <p>Atque veritatis non mollitia obcaecati, accusamus optio, amet repellat at, possimus corrupti corporis repellendus. Repellendus impedit corporis, architecto aperiam porro facere, accusamus dignissimos veritatis ipsa quae, fugiat possimus. Quod, unde.</p>
     </aside>
+    <div class="icon-bar">
+        <a href="https://github.com/a18jorgepr1/LMSXI" class="github"><i class="fa fa-github"></i></a>
+        <a href="https://www.instagram.com/jorge_fpv/?hl=es" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UC2wz6OBsxujtzIUFxScO2qg" class="gallery__img" class="youtube"><i class="fa fa-youtube"></i></a>
+    </div>
     <div id="footer">
-        <p>fpvdrone.tk - 2019</p>
+        <p>fpvdrone.tk - 2019
+            <img class="icons" src="icons/envelope-square-solid.svg" alt="mail">
+            <img class="icons" src="icons/instagram-brands.svg" alt="instagram">
+            <img class="icons" src="icons/youtube-brands.svg" alt="youtube">
+        </p>
     </div>
 </body>
 
