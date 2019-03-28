@@ -88,7 +88,7 @@ body {
     font-size: 20px;
 }
 
-.icon-bar a.instagram,
+.icon-bar a.nstagram,
 github,
 youtube:hover {
     background-color: #000;
@@ -151,6 +151,24 @@ a:focus {
 a:active {
     font-weight: bold;
     background: #F26D30;
+}
+a#index {
+    text-decoration: overline;
+}
+a#material {
+    text-decoration: overline;
+}
+a#montaje {
+    text-decoration: overline;
+}
+a#software {
+    text-decoration: overline;
+}
+a#media {
+    text-decoration: overline;
+}
+a#contacto {
+    text-decoration: overline;
 }
 
 body {
